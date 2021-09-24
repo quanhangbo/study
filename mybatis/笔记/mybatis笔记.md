@@ -529,7 +529,7 @@ Mybatis默认的事务管理器就是 JDBC  ， 连接池 ： POOLED
 
 这些属性都是可外部配置且可动态替换的，既可以在典型的 Java 属性文件中配置，亦可通过 properties 元素的子元素来传递。【db.properties】
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudy8f88b6b1-f06c-4f25-bb8f-49428178671b.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudy8f88b6b1-f06c-4f25-bb8f-49428178671b.png)
 
 编写一个配置文件
 
@@ -598,7 +598,7 @@ public class User {}
 
 这是 MyBatis 中极为重要的调整设置，它们会改变 MyBatis 的运行时行为。
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudybb00b866-144d-4dd9-8dca-381f29e72041.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudybb00b866-144d-4dd9-8dca-381f29e72041.png)
 
 ![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudy1d80253a-7d98-402a-becf-0980090d4266.png)
 
@@ -666,7 +666,7 @@ MapperRegistry：注册绑定我们的Mapper文件；
 
 ### 8、生命周期和作用域
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudybe256169-81b1-4a72-bec5-41d259db1e63.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudybe256169-81b1-4a72-bec5-41d259db1e63.png)
 
 生命周期，和作用域，是至关重要的，因为错误的使用会导致非常严重的**并发问题**。
 
@@ -688,7 +688,7 @@ MapperRegistry：注册绑定我们的Mapper文件；
 - SqlSession 的实例不是线程安全的，因此是不能被共享的，所以它的最佳的作用域是请求或方法作用域。
 - 用完之后需要赶紧关闭，否则资源被占用！
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudy9381ae0c-8a7e-439f-adfd-27cd1942e9f7.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudy9381ae0c-8a7e-439f-adfd-27cd1942e9f7.png)
 
 这里面的每一个Mapper，就代表一个具体的业务！
 
@@ -698,7 +698,7 @@ MapperRegistry：注册绑定我们的Mapper文件；
 
 数据库中的字段
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudy2737f24f-5a5f-4032-b606-5a326f6046cc.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudy2737f24f-5a5f-4032-b606-5a326f6046cc.png)
 
 新建一个项目，拷贝之前的，测试实体类字段不一致的情况
 
@@ -713,7 +713,7 @@ public class User {
 
 测试出现问题
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudy8606d2fe-05c9-460d-808c-b0b3557e542a.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudy8606d2fe-05c9-460d-808c-b0b3557e542a.png)
 
 ```xml
 //    select * from mybatis.user where id = #{id}
@@ -776,7 +776,7 @@ id   name   password
 
 现在：日志工厂！
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudyf45bb60d-c599-41b8-a267-16d07397cb3d.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudyf45bb60d-c599-41b8-a267-16d07397cb3d.png)
 
 - SLF4J 
 
@@ -801,7 +801,7 @@ id   name   password
 </settings>
 ```
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudy6d120066-e000-4d93-9da4-66d26d29fc0e.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudy6d120066-e000-4d93-9da4-66d26d29fc0e.png)
 
 
 
@@ -863,7 +863,7 @@ log4j.logger.java.sql.PreparedStatement=DEBUG
 
 4. Log4j的使用！，直接测试运行刚才的查询
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudya30307b9-76fe-45c3-944f-71d0e308f0e0.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudya30307b9-76fe-45c3-944f-71d0e308f0e0.png)
 
 
 
@@ -984,7 +984,7 @@ List<User> userList = sqlSession.selectList("com.kuang.dao.UserMapper.getUserByR
 
 ### 7.3、分页插件
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudy41058292-2027-4900-9e73-b3bc82371257.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudy41058292-2027-4900-9e73-b3bc82371257.png)
 
 了解即可，万一 以后公司的架构师，说要使用，你需要知道它是什么东西！
 
@@ -1044,13 +1044,13 @@ List<User> getUsers();
 
 底层：动态代理！
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudyeb7eabd8-b238-4d3e-bee1-cf44b43d8a43.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudyeb7eabd8-b238-4d3e-bee1-cf44b43d8a43.png)
 
 
 
 **Mybatis详细的执行流程！**
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudyde30ce4d-a3af-451e-949c-ea9ff418fed3.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudyde30ce4d-a3af-451e-949c-ea9ff418fed3.png)
 
 
 
@@ -1179,13 +1179,13 @@ Never write another getter or equals method again, with one annotation your clas
 
 多对一：
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudy1a0f18d8-6468-4b08-b5a4-cd932d79dc15.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudy1a0f18d8-6468-4b08-b5a4-cd932d79dc15.png)
 
 - 多个学生，对应一个老师
 - 对于学生这边而言，  **关联** ..  多个学生，关联一个老师  【多对一】
 - 对于老师而言， **集合** ， 一个老师，有很多学生 【一对多】
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudyeb111f9d-45a1-461c-b469-605cab19f7d2.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudyeb111f9d-45a1-461c-b469-605cab19f7d2.png)
 
 SQL：
 
@@ -1571,9 +1571,9 @@ select * from user where 1=1 and
 (id=1 or id=2 or id=3)
    ```
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudydf173b7d-0e5a-4d9e-8c63-0a2dc2ecaaa4.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudydf173b7d-0e5a-4d9e-8c63-0a2dc2ecaaa4.png)
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudy9818988f-992b-4acb-9991-9f6b3d7270fc.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudy9818988f-992b-4acb-9991-9f6b3d7270fc.png)
 
 ```xml
 <!--
@@ -1651,7 +1651,7 @@ select * from user where 1=1 and
 2. 测试在一个Sesion中查询两次相同记录
 3. 查看日志输出
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudy0f260743-c461-4706-bc6b-de7a3c44d761.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudy0f260743-c461-4706-bc6b-de7a3c44d761.png)
 
 
 
@@ -1661,7 +1661,7 @@ select * from user where 1=1 and
 
 2. 增删改操作，可能会改变原来的数据，所以必定会刷新缓存！
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudy3384703e-9d67-4c73-aee2-8d36898661ce.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudy3384703e-9d67-4c73-aee2-8d36898661ce.png)
 
 3. 查询不同的Mapper.xml
 
@@ -1738,7 +1738,7 @@ select * from user where 1=1 and
 
 ### 13.5、缓存原理
 
-![](https://kuangstudy.oss-cn-beijing.aliyuncs.com/bbs/2021/02/22/kuangstudybc0f4ad9-22b9-4cda-8d08-d01208f1d0b1.png)
+![](https://raw.githubusercontent.com/quanhangbo/typora_photo/main/img/kuangstudybc0f4ad9-22b9-4cda-8d08-d01208f1d0b1.png)
 
 
 

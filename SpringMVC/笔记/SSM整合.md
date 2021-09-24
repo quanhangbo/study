@@ -427,7 +427,7 @@ INSERT  INTO `books`(`bookID`,`bookName`,`bookCounts`,`detail`)VALUES
    </beans>
    ```
 
-3. **Spring整合service层**
+3. **Spring整合service层 **（spring-service.xml）
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>

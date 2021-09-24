@@ -8,6 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.util.List;
 
 public class MyTest {
+
     @Test
     public void test() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
