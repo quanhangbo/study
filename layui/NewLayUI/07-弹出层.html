@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+	</head>
+	<body>
+		<span id="sp">行内元素</span>
+		<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			layui.use(['element', 'layer', 'form'], function() {
+				var element = layui.element,
+					layer = layui.layer,
+					form = layui.form;
+					
+					 /* 信息框 */
+					/* layer.open({
+					    type:0,
+					    title:"系统消息",
+					    // content可以传入任意的文本或html
+					    content:"Hello"
+					}); */
+					
+					/* 页面层 */
+					/* layer.open({
+					    type:1,
+					    title:"系统消息",
+					    // content可以传入任意的文本或html
+					    content:"<div style='height:100px;width:200px'>Hello</div>"
+					}); */
+					
+					/* iframe */
+					/* layer.open({
+					    type:2,
+					    title:"系统消息",
+					    // content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['url', 'no']
+					    content:"http://www.baidu.com",
+						area:['800px','450px']
+					    // content:["http://www.baidu.com",'no']
+					}); */
+					
+					/* tips层 */
+					/* layer.open({
+					  type: 4,
+					  content: ['span标签', '#sp'] //数组第二项即吸附元素选择器或者DOM
+					}); */
+					
+					// icon图标
+					// eg1
+					// layer.alert('酷毙了', {icon: 0});
+					
+					// eg2
+					// layer.msg('你愿意和我做朋友么？', {
+					//     time: 0, //不自动关闭
+					//     btn: ['当然愿意', '狠心拒绝'], // 按钮
+					//     yes: function(index){ 
+					//         layer.close(index); // 关闭当前弹出框
+					//         layer.msg('新朋友，你好！', {
+					//             icon: 6, // 图标
+					//             btn: ['开心','快乐']
+					//         });
+					//     }
+					// });
+					
+					//加载层
+					layer.load("正在加载请稍等",{icon:2});
+			});
+		</script>
+	</body>
+</html>

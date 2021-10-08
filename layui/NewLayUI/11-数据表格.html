@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
+	</head>
+	<body>
+		<table id="test1" lay-filter='test1'></table>
+		
+		<!-- 头部工具栏 -->
+		<script type="text/html" id="toolbarDemo">
+			<div class="layui-btn-container">
+				<!-- lay-event 给元素绑定事件名 -->
+				<button class="layui-btn layui-btn-sm" lay-event="getCheckData">
+					获取选中行数据
+		    	</button>
+				<button class="layui-btn layui-btn-sm" lay-event="getCheckLength">
+					获取选中数目
+		    	</button>
+				<button class="layui-btn layui-btn-sm" lay-event="isAll">
+					验证是否全选
+		    	</button>
+		    </div>
+		</script>
+		
+		<!-- 行工具栏 -->
+		<script type="text/html" id="barDemo">
+			<a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+			<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+		</script>
+		
+		<script src="js/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			layui.use('table', function(){
+			  var table = layui.table;
+				
+				// 第一个实例
+				  table.render({
+					elem: '#test1'
+					,url: 'js/data.json' // 数据接口
+					,page:true
+					,cols: [[ // 表头
+					   {type: 'checkbox', fixed: 'left'}
+					  ,{field: 'id', title: 'ID', sort: true, fixed: 'left'}
+					  ,{field: 'uname', title: '用户名', edit: 'text'}
+					  ,{field: 'sex', title: '性别', sort: true}
+					  ,{field: 'age', title: '年龄'} 
+					  ,{field: 'job', title: '工作' }
+					  ,{title: '操作', toolbar:'#barDemo' }
+					]]
+					,toolbar:"#toolbarDemo"   //开启头部工具栏
+				  });
+				  
+				  
+				  
+				//监听头部工具栏     括号中监听的是数据容器的lay-filter属性值
+				table.on("toolbar(test1)",function(obj){
+					// 获取当前表格被选中的记录对象，返回数组
+					var checkData = table.checkStatus(obj.config.id);
+					if(checkData.data.length > 1){
+						alert("不能操作多行");
+						return;
+					}else if(checkData.data.length < 1){
+						alert("请至少选择一行");
+						return;
+					}
+					console.log(obj);
+					if(obj.event == 'getCheckData'){ 
+						console.log(checkData.data[0]);
+					}else if(obj.event == 'getCheckLength'){
+						console.log(checkData.data.length);
+					}else if(obj.event == 'isAll'){
+						console.log(checkData.isAll);
+					}
+				});
+				
+				
+				//监听行工具栏    括号中监听的是数据容器的lay-filter属性值
+				table.on("tool(test1)",function(obj){
+					console.log(obj);
+					//判断用户行为
+					var  tr = obj.data;
+					console.log(tr);
+					var eventName = obj.event;
+
+
+					if(eventName =="del"){
+						layer.confirm("您确定要删除吗？",function(index){
+							obj.del();
+
+							//关闭当前页面(index是当前弹出层的下标)
+							layer.close(index);
+						});
+					}else if(eventName == "edit"){
+						layer.prompt({
+							//表单元素的类型，0=文本框，1=密码框，2=文本域
+							fromType:0,
+							value:tr.username
+						//改变之后的值，下标
+						},function(value,index){
+							console.log(value)
+						//修改制定单元格的值
+							//value表示输入的值
+							obj.update({
+								uname:value
+							});
+							layer.close(index);
+						});
+					}
+				});
+				
+				
+				// 监听单元格编辑   括号中监听的是数据容器的lay-filter属性值
+				table.on('edit(test1)', function(obj){
+					console.log(obj);
+					var value = obj.value // 得到修改后的值
+					,data = obj.data // 得到所在行所有键值
+					,field = obj.field; // 得到字段
+					layer.msg('[ID: '+ data.id +'] ' + field + ' 字段更改为：'+ value);
+				});
+			});	
+		</script>
+	</body>
+</html>

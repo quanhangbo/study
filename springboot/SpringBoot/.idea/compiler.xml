@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="helloworld" />
+        <module name="hell-shiro" />
+        <module name="springboot-06-security" />
+        <module name="springboot-03-web" />
+        <module name="springboot-02-configu" />
+        <module name="provider-server" />
+        <module name="demo" />
+        <module name="springboot-05-mybatis" />
+        <module name="consumer-server" />
+        <module name="my-site" />
+        <module name="springboot-04-web" />
+        <module name="springboot-02-config" />
+        <module name="springboot-01-helloword" />
+        <module name="swagger-demo" />
+        <module name="springboot-04-data" />
+        <module name="springboot-08-test" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="consumer-server" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="hell-shiro" target="1.5" />
+      <module name="helloworld" target="1.8" />
+      <module name="my-site" target="1.8" />
+      <module name="provider-server" target="1.8" />
+      <module name="springboot-01-helloword" target="1.8" />
+      <module name="springboot-02-config" target="1.8" />
+      <module name="springboot-02-configu" target="1.8" />
+      <module name="springboot-03-web" target="1.8" />
+      <module name="springboot-04-data" target="1.8" />
+      <module name="springboot-04-web" target="1.8" />
+      <module name="springboot-05-mybatis" target="1.8" />
+      <module name="springboot-06-security" target="1.8" />
+      <module name="springboot-08-shiro" target="1.5" />
+      <module name="springboot-08-test" target="1.8" />
+      <module name="swagger-demo" target="1.8" />
+      <module name="test" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
+      <module name="helloworld" options="-parameters" />
+      <module name="my-site" options="-parameters" />
+      <module name="springboot-01-helloword" options="-parameters" />
+      <module name="test" options="-parameters" />
+    </option>
+  </component>
+</project>
