@@ -742,9 +742,9 @@ public class User {
   ```
 id   name   pwd
 id   name   password
-```
 
 ```xml
+
 <!--结果集映射-->
 <resultMap id="UserMap" type="User">
     <!--column数据库中的字段，property实体类中的属性-->

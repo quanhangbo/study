@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e41bd734-e984-4fdc-b833-dae24c13350a" name="Default Changelist" comment="" />
+    <list default="true" id="e41bd734-e984-4fdc-b833-dae24c13350a" name="Default Changelist" comment="Default Changelist">
+      <change afterPath="$PROJECT_DIR$/../../mybatis/code/Mybatis-kuang/Mybatis-Study/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis/code/Mybatis-kuang/Mybatis-Study/.idea/dataSources/cf019ad1-3544-4d01-a931-41ce5dee03ef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis/code/Mybatis-kuang/Mybatis-Study/.idea/dataSources/cf019ad1-3544-4d01-a931-41ce5dee03ef.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis/code/Mybatis-kuang/Mybatis-Study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis/code/Mybatis-kuang/Mybatis-Study/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis/code/Mybatis-kuang/Mybatis-Study/mybatis-01/target/classes/nuc/ss/utils/MybatisUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis/code/Mybatis-kuang/Mybatis-Study/mybatis-01/target/classes/nuc/ss/utils/MybatisUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis/笔记/mybatis笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis/笔记/mybatis笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot/06.SpringBoot.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/06.SpringBoot.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +22,7 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -81,14 +88,13 @@
     </panes>
   </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SpringMVC-kuang/code/SpringMVC" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Facets" />
@@ -106,10 +112,10 @@
       <recent name="E:\ideaworkstation\study-spring\spring01-ioc1\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.selectAllUsers">
-    <configuration name="MyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MyTest.test1 (1)">
+    <configuration name="MyTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kuang.MyTest" />
-      <module name="spring01-ioc1" />
+      <module name="spring02-hellospring" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.kuang.*" />
@@ -120,17 +126,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.selectAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring10-spring整合mybatis" />
+    <configuration name="MyTest (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kuang.MyTest" />
+      <module name="spring03-ioc2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kuang.mapper.*" />
+          <option name="PATTERN" value="com.kuang.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.kuang.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.kuang.mapper.MyTest" />
-      <option name="METHOD_NAME" value="selectAllUsers" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kuang.MyTest" />
+      <module name="spring04-DI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kuang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.test1 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring06-anno" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring05-Autowired" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,8 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyTest.selectAllUsers" />
-        <item itemvalue="Application.MyTest" />
+        <item itemvalue="JUnit.MyTest.test1 (1)" />
+        <item itemvalue="JUnit.MyTest.test1" />
+        <item itemvalue="应用程序.MyTest (3)" />
+        <item itemvalue="应用程序.MyTest (2)" />
+        <item itemvalue="应用程序.MyTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +198,7 @@
       <workItem from="1631839357596" duration="423000" />
       <workItem from="1631839802562" duration="1333000" />
       <workItem from="1631841156277" duration="4738000" />
+      <workItem from="1633684163143" duration="1153000" />
     </task>
     <servers />
   </component>

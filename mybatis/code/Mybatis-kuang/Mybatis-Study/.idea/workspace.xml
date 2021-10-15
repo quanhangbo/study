@@ -4,11 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd203ebf-950a-4635-8d1e-cab16679a04e" name="Changes" comment="" />
+    <list default="true" id="cd203ebf-950a-4635-8d1e-cab16679a04e" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cf019ad1-3544-4d01-a931-41ce5dee03ef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cf019ad1-3544-4d01-a931-41ce5dee03ef.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01/target/classes/nuc/ss/utils/MybatisUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/target/classes/nuc/ss/utils/MybatisUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../笔记/mybatis笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../笔记/mybatis笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../springboot/06.SpringBoot.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../springboot/06.SpringBoot.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mybatis-01/src/main/java/nuc/ss/dao/UserMapper.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mybatis-01/src/main/java/nuc/ss/dao/UserMapper.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mybatis-01/src/main/java/nuc/ss/pojo/User.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mybatis-08/src/main/resources/mybatis-config.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mybatis-06/src/main/java/nuc/ss/dao/TeacherMapper.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mybatis-08/src/main/java/nuc/ss/dao/BlogMapper.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mybatis-01/src/test/java/nuc/ss/dao/UserDaoTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mybatis-08/src/main/resources/db.properties" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mybatis-01/src/main/java/nuc/ss/utils/MybatisUtils.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -19,6 +41,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1xx0Xtbi8c2KAPX2VNXxtPNl5mM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -26,13 +49,15 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../spring/study-spring" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.getTeacher">
+  <component name="RunManager" selected="JUnit.UserDaoTest.getUserLike">
     <configuration name="MyTest.getTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-07" />
       <option name="PACKAGE_NAME" value="" />
@@ -109,9 +134,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest.getUserLike" />
         <item itemvalue="JUnit.MyTest.getTeacher" />
         <item itemvalue="JUnit.UserDaoTest.addUser2" />
-        <item itemvalue="JUnit.UserDaoTest.getUserLike" />
         <item itemvalue="JUnit.UserDaoTest.getUsers" />
         <item itemvalue="JUnit.UserDaoTest.test (1)" />
       </list>
@@ -135,11 +160,25 @@
       <workItem from="1632038139154" duration="748000" />
       <workItem from="1632039550457" duration="400000" />
       <workItem from="1632040270350" duration="6000" />
+      <workItem from="1633655715900" duration="357000" />
+      <workItem from="1633674491322" duration="4213000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
